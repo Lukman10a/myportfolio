@@ -16,9 +16,12 @@ const Services = () => {
   });
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 m-4 gap-8">
-      {serviceDetails}
-    </div>
+    <>
+      <h1 className="text-center text-4xl font-semibold mb-4">My Services</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-3 m-4 gap-8">
+        {serviceDetails}
+      </div>
+    </>
   );
 };
 

@@ -4,10 +4,10 @@ import about_img from "../public/about_img.jpg";
 const About = () => {
   return (
     <div className="m-4">
-      <div className="sm:grid-cols-2 grid grid-cols-1 ">
+      <h1 className="text-center text-4xl font-semibold mb-4">About Me</h1>
+      <div className="sm:grid-cols-2 grid grid-cols-1 gap-4">
         <Image src={about_img} width={600} />
         <div className="grid place-items-center">
-          <h1 className="text-center text-xl font-semibold mb-4">About Me</h1>
           <p className="text-gray-700">
             I am an experienced React developer with over two years of expertise
             in writing clean code and strong knowledge of HTML5, CSS3, and
