@@ -3,13 +3,8 @@ const Services = () => {
     return (
       <div>
         <div className="p-6 border-2 rounded-md">
-          <h1 className="text-xl font-bold py-2">Web Development</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            eveniet, deserunt magni odio commodi perferendis molestias
-            molestiae, neque vero blanditiis unde iste ut repudiandae corrupti
-            minima ipsum earum excepturi architecto.
-          </p>
+          <h1 className="text-xl font-bold py-2">{service.title}</h1>
+          <p>{service.subtitle}</p>
         </div>
       </div>
     );
