@@ -1,7 +1,11 @@
+import About from "@/components/about";
+import NavBar from "@/components/navBar";
+
 export default function Home() {
   return (
     <main>
-      <div>portfolio</div>
+      <NavBar />
+      <About />
     </main>
   );
 }
