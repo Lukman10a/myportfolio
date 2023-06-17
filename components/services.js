@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <>
       <h1 className="text-center text-4xl font-semibold mb-4">My Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 m-4 gap-8">
+      <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2">
         {serviceDetails}
       </div>
     </>
