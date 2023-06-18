@@ -1,11 +1,9 @@
 const Services = () => {
   const serviceDetails = SERVICE_DETAILLS.map((service) => {
     return (
-      <div>
-        <div className="p-6 border-2 rounded-md">
-          <h1 className="text-xl font-bold py-2">{service.title}</h1>
-          <p>{service.subtitle}</p>
-        </div>
+      <div className="p-7 space-y-4 border-2 rounded-md">
+        <h1 className="text-xl font-bold py-2">{service.title}</h1>
+        <p>{service.subtitle}</p>
       </div>
     );
   });
@@ -13,7 +11,7 @@ const Services = () => {
   return (
     <>
       <h1 className="text-center text-4xl font-semibold mb-4">My Services</h1>
-      <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2">
+      <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2 p-10">
         {serviceDetails}
       </div>
     </>

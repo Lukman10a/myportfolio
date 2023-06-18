@@ -4,7 +4,7 @@ import blogimg from "../public/blogimg.jpg";
 const Portfolio = () => {
   const portfolioData = PORTFOLIO_DATA.map((data) => {
     return (
-      <div className="border-2 space-y-3 ">
+      <div className="border-2 space-y-3">
         <div className="object-fill	">
           <Image src={data.img} className="object-fill" />
         </div>
@@ -22,7 +22,7 @@ const Portfolio = () => {
   return (
     <>
       <h1 className="text-center text-4xl font-semibold mb-4">My Portfolio</h1>
-      <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2">
+      <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2 p-10">
         {portfolioData}
       </div>
     </>
