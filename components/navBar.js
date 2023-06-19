@@ -7,7 +7,7 @@ const NavBar = () => {
         <p>Email: abdulrauflukman9@gmail.com</p>
         <p>Phone No: +2348089287065</p>
       </div>
-      <div className="bg-lime-900 flex justify-evenly items-center gap-20 p-4">
+      <div className="bg-lime-900 flex justify-evenly items-center lg:gap-20 p-4">
         <div className="text-2xl font-bold cursor-pointer">Your Name</div>
         <div className="flex items-center space-x-4">
           <ul className="flex space-x-4 cursor-pointer">
