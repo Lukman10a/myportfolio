@@ -1,14 +1,14 @@
 import Image from "next/image";
-import about_img from "../public/about_img.jpg";
+import aboutimg from "../public/about-img.jpg";
 
 const About = () => {
   return (
     <div className="p-10">
       <h1 className="text-center text-4xl font-semibold mb-4">About Me</h1>
-      <div className="grid lg:grid-cols-2 space-y-3">
-        <Image src={about_img} width={600} />
+      <div className="grid lg:grid-cols-2 md:place-items-center space-y-3 gap-2">
+        <Image src={aboutimg} width={600} />
         <div className="flex justify-between items-center gap-5">
-          <div>
+          <div className="grid md:place-items-center gap-2 lg:gap-2">
             <p className="text-gray-700">
               I am an experienced React developer with over two years of
               expertise in writing clean code and strong knowledge of HTML5,
@@ -21,7 +21,7 @@ const About = () => {
               code, and commitment to staying up-to-date with the latest
               industry trends.
             </p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white text-xl py-2 px-4 rounded-3xl transition duration-300 ease-in-out">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white text-xl p-2 px-6 rounded-2xl transition duration-300 ease-in-out">
               Explore
             </button>
           </div>
