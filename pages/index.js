@@ -7,7 +7,7 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main>
       <NavBar />
       <Hero />
       <About />

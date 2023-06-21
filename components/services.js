@@ -11,13 +11,13 @@ const Services = () => {
     return (
       <div className="p-7 space-y-4 border-2 rounded-md shadow hover:shadow-lg transition ease-in-out delay-150 hover:shadow-slate-500 hover:bg-black hover:text-white cursor-pointer">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold py-2 text-blue-500">
+          <h1 className="text-xl font-bold py-2 text-gray-500 hover:text-blue-500">
             {service.title}
           </h1>
           <Image src={service.img} width={70} />
         </div>
         <p>{service.subtitle}</p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-black hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Click Me
         </button>
       </div>

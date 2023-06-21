@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="grid lg:grid-cols-5 grid-rows-2 gap-10 bg-slate-500 p-6">
+    <div className="grid lg:grid-cols-4 gap-10 bg-slate-500 p-6">
       <div className="space-y-4">
         <h2 className="font-bold text-white text-xl">About us</h2>
         <p className="text-slate-400">
@@ -10,15 +10,7 @@ const Footer = () => {
           libero quibusdam, distinctio incidunt commodi ea temporibus non
         </p>
       </div>
-      <div className="space-y-4">
-        <h2 className="font-bold text-white text-xl">Quick Links</h2>
-        <ul className="space-y-2 cursor-pointer text-slate-400">
-          <li>About</li>
-          <li>Testimonials</li>
-          <li>Services</li>
-          <li>Contact us</li>
-        </ul>
-      </div>
+
       <div className="space-y-4 ">
         <h2 className="font-bold text-white text-xl">Reach out to us</h2>
         <ul className="space-y-2 cursor-pointer text-slate-400">
@@ -50,12 +42,6 @@ const Footer = () => {
             </button>
           </fieldset>
         </form>
-      </div>
-      <div>
-        <p className="">
-          Copyright ©2023 All rights reserved | This portfolio was designed by
-          Lukman
-        </p>
       </div>
     </div>
   );
