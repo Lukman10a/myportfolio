@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import NavBar from "@/components/navBar";
@@ -9,10 +10,11 @@ export default function Home() {
   return (
     <main>
       <NavBar />
-      <Hero className="relative z-10" />
+      <Hero />
       <About />
       <Services />
       <Portfolio />
+      <Contact />
       <Footer />
     </main>
   );
