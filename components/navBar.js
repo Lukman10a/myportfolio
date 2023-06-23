@@ -12,8 +12,8 @@ const NavBar = () => {
         Lukman
       </div>
 
-      <div className="grow-1">
-        <div className="hidden lg:flex items-center justify-center text-black gap-2 cursor-pointer">
+      <div className="grow-1 hidden">
+        <div className="lg:flex items-center justify-center text-black gap-2 cursor-pointer">
           <Link href="/home" className="hover:text-blue-300">
             Home
           </Link>
@@ -35,10 +35,12 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
+
       <div className="flex gap-2 text-2xl">
         <AiFillLinkedin />
         <AiFillGithub />
       </div>
+
       <div className="flex items-center justify-end lg:hidden">
         <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-500 hover:bg-slate-500 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-700">
           <span className="sr-only">open</span>
