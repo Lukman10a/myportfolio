@@ -2,25 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="grid lg:grid-cols-4 gap-10 bg-slate-500 p-6">
-      <div className="space-y-4">
-        <h2 className="font-bold text-white text-xl">About us</h2>
-        <p className="text-slate-400">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, rem
-          libero quibusdam, distinctio incidunt commodi ea temporibus non
-        </p>
-      </div>
-
+    <div className="flex items-center justify-center gap-5 bg-slate-500 p-6">
       <div className="space-y-4 ">
-        <h2 className="font-bold text-white text-xl">Reach out to us</h2>
-        <ul className="space-y-2 cursor-pointer text-slate-400">
+        <h2 className="font-bold text-white text-xl text-center">
+          Reach out to us
+        </h2>
+        <ul className="flex items-center justify-center gap-10 cursor-pointer text-slate-400">
           <li>Facebook</li>
           <li>Instagram</li>
           <li>Telegram</li>
           <li>WhatsApp</li>
         </ul>
       </div>
-      <div className="space-y-4 col-span-2">
+      {/* <div className="space-y-4 col-span-2">
         <h2 className="font-bold text-white text-xl">
           Subscribe to our newsletter
         </h2>
@@ -42,7 +36,7 @@ const Footer = () => {
             </button>
           </fieldset>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

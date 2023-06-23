@@ -12,7 +12,7 @@ const Hero = () => {
           Crafting Dynamic Web Experiences That Drive Results
         </p>
       </div>
-      <Image src={hero_image} width={800} />
+      <Image src={hero_image} />
     </div>
   );
 };
