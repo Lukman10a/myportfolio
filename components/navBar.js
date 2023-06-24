@@ -5,40 +5,48 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import { Fragment } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  console.log(props);
   return (
     <Popover className="fixed inset-0 z-20 bg-white flex justify-between items-center px-6 py-2 lg:h-24 h-10">
-      <div className="lg:text-2xl font-bold cursor-pointer text-black">
+      <Link
+        href="#home"
+        className="lg:text-2xl font-bold cursor-pointer text-black"
+      >
         Lukman
-      </div>
+      </Link>
 
-      <div className="grow-1 hidden">
+      <div className="grow-1 hidden lg:block">
         <div className="lg:flex items-center justify-center text-black gap-2 cursor-pointer">
-          <Link href="/home" className="hover:text-blue-300">
+          <Link href="#home" className="hover:text-blue-300">
             Home
           </Link>
 
-          <Link href="/about" className="hover:text-blue-300">
+          <Link href="#about-section" className="hover:text-blue-300">
             About
           </Link>
 
-          <Link href="/portfolio" className="hover:text-blue-300">
+          <Link href="#portfolio-section" className="hover:text-blue-300">
             Portfolio
           </Link>
 
-          <Link href="/services" className="hover:text-blue-300">
+          <Link href="#service-section" className="hover:text-blue-300">
             Services
           </Link>
 
-          <Link href="/contact" className="hover:text-blue-300">
+          <Link href="#contact-section" className="hover:text-blue-300">
             Contact
           </Link>
         </div>
       </div>
 
       <div className="flex gap-2 text-2xl">
-        <AiFillLinkedin />
-        <AiFillGithub />
+        <Link href="https://www.linkedin.com/in/abdulrauf-lukman-761095217/">
+          <AiFillLinkedin />
+        </Link>
+        <Link href="https://github.com/Lukman10a">
+          <AiFillGithub />
+        </Link>
       </div>
 
       <div className="flex items-center justify-end lg:hidden">
@@ -64,7 +72,9 @@ const NavBar = () => {
           <div className="rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
-                <h1 className="text-2xl font-bold">Lukman</h1>
+                <Link href="#home" className="text-2xl font-bold">
+                  Lukman
+                </Link>
                 <div className="-mr-1">
                   <Popover.Button className="inline-flex items-center justify-center p-2 bg-white rounded-md text-gray-600 hover:bg-gray-200 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black-600">
                     <span className="sr-only">Close</span>
@@ -73,24 +83,27 @@ const NavBar = () => {
                 </div>
               </div>
               <div className="mt-6*">
-                <nav className="grid gap-y-8">
-                  <Link href="/home" className="hover:text-blue-300">
+                <nav className="grid gap-y-6 py-2">
+                  <Link href="#home" className="hover:text-blue-300">
                     Home
                   </Link>
 
-                  <Link href="/about" className="hover:text-blue-300">
+                  <Link href="#about-section" className="hover:text-blue-300">
                     About
                   </Link>
 
-                  <Link href="/portfolio" className="hover:text-blue-300">
+                  <Link
+                    href="#portfolio-section"
+                    className="hover:text-blue-300"
+                  >
                     Portfolio
                   </Link>
 
-                  <Link href="/services" className="hover:text-blue-300">
+                  <Link href="#service-section" className="hover:text-blue-300">
                     Services
                   </Link>
 
-                  <Link href="/contact" className="hover:text-blue-300">
+                  <Link href="#contact-section" className="hover:text-blue-300">
                     Contact
                   </Link>
                 </nav>

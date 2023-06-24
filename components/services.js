@@ -9,7 +9,10 @@ import frontend from "../public/frontend.png";
 const Services = () => {
   const serviceDetails = SERVICE_DETAILLS.map((service) => {
     return (
-      <div className="p-7 space-y-4 border-2 rounded-md shadow hover:shadow-lg transition ease-in-out delay-150 hover:shadow-slate-500 hover:bg-black hover:text-white cursor-pointer">
+      <div
+        id="service-section"
+        className="p-7 space-y-4 border-2 rounded-md shadow hover:shadow-lg transition ease-in-out delay-150 hover:shadow-slate-500 hover:bg-black hover:text-white cursor-pointer"
+      >
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-bold py-2 text-gray-500 hover:text-blue-500">
             {service.title}

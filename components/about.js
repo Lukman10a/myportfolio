@@ -3,7 +3,7 @@ import aboutimg from "../public/about-img.jpg";
 
 const About = () => {
   return (
-    <div className="p-10">
+    <div id="about-section" className="p-10">
       <h1 className="text-center text-4xl font-semibold mb-4">About Me</h1>
       <div className="grid lg:grid-cols-2 md:place-items-center space-y-3 gap-2">
         <Image src={aboutimg} width={600} />

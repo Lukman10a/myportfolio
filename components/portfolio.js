@@ -1,12 +1,13 @@
 import Image from "next/image";
 import blogimg from "../public/blogimg.jpg";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+  console.log(props.id);
   const portfolioData = PORTFOLIO_DATA.map((data) => {
     return (
-      <div className="border-2 space-y-3">
+      <div id="portfolio-section" className="border-2 space-y-3">
         <div className="object-fill	">
-          <Image src={data.img} className="object-fill" />
+          <Image src={data.img} alt="" className="object-fill" />
         </div>
         <div className="p-5 space-y-2">
           <h2>{data.title}</h2>
