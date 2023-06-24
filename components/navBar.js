@@ -5,10 +5,9 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import { Fragment } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-const NavBar = (props) => {
-  console.log(props);
+const NavBar = () => {
   return (
-    <Popover className="fixed inset-0 z-20 bg-white flex justify-between items-center px-6 py-2 lg:h-24 h-10">
+    <Popover className="fixed inset-0 z-20 bg-white flex justify-between items-center px-6 py-2 md:h-24 h-10">
       <Link
         href="#home"
         className="lg:text-2xl font-bold cursor-pointer text-black"
@@ -16,25 +15,40 @@ const NavBar = (props) => {
         Lukman
       </Link>
 
-      <div className="grow-1 hidden lg:block">
-        <div className="lg:flex items-center justify-center text-black gap-2 cursor-pointer">
-          <Link href="#home" className="hover:text-blue-300">
+      <div className="grow-1 hidden md:block">
+        <div className="md:flex items-center justify-center text-black gap-4 cursor-pointer font-medium ">
+          <Link
+            href="#home"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
             Home
           </Link>
 
-          <Link href="#about-section" className="hover:text-blue-300">
+          <Link
+            href="#about-section"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
             About
           </Link>
 
-          <Link href="#portfolio-section" className="hover:text-blue-300">
+          <Link
+            href="#portfolio-section"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
             Portfolio
           </Link>
 
-          <Link href="#service-section" className="hover:text-blue-300">
+          <Link
+            href="#service-section"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
             Services
           </Link>
 
-          <Link href="#contact-section" className="hover:text-blue-300">
+          <Link
+            href="#contact-section"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
             Contact
           </Link>
         </div>
@@ -49,7 +63,7 @@ const NavBar = (props) => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-end lg:hidden">
+      <div className="flex items-center justify-end md:hidden">
         <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-500 hover:bg-slate-500 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-700">
           <span className="sr-only">open</span>
           <Bars3Icon className="h-6 w-6* aria-hidden:true" />
@@ -84,26 +98,38 @@ const NavBar = (props) => {
               </div>
               <div className="mt-6*">
                 <nav className="grid gap-y-6 py-2">
-                  <Link href="#home" className="hover:text-blue-300">
+                  <Link
+                    href="#home"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                  >
                     Home
                   </Link>
 
-                  <Link href="#about-section" className="hover:text-blue-300">
+                  <Link
+                    href="#about-section"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                  >
                     About
                   </Link>
 
                   <Link
                     href="#portfolio-section"
-                    className="hover:text-blue-300"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
                     Portfolio
                   </Link>
 
-                  <Link href="#service-section" className="hover:text-blue-300">
+                  <Link
+                    href="#service-section"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                  >
                     Services
                   </Link>
 
-                  <Link href="#contact-section" className="hover:text-blue-300">
+                  <Link
+                    href="#contact-section"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                  >
                     Contact
                   </Link>
                 </nav>
