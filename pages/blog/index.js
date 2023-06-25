@@ -1,11 +1,11 @@
 import Image from "next/image";
-import blogimg from "../public/blogimg.jpg";
+import blogimg from "../../public/blogimg.jpg";
 
-const Portfolio = (props) => {
+const Projects = (props) => {
   console.log(props.id);
-  const portfolioData = PORTFOLIO_DATA.map((data) => {
+  const projectsData = PROJECTS_DATA.map((data) => {
     return (
-      <div id="portfolio-section" className="border-2 space-y-3">
+      <div id="projects-section" className="border-2 space-y-3">
         <div className="object-fill	">
           <Image src={data.img} alt="" className="object-fill" />
         </div>
@@ -22,17 +22,18 @@ const Portfolio = (props) => {
 
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold mb-4">My Portfolio</h1>
+      <h1 className="text-center text-4xl font-semibold mb-4">My Blog</h1>
+      <h2 className="text-center text-xl">Projects I have built so far</h2>
       <div className="grid lg:grid-cols-3 gap-7 sm:grid-cols-2 p-10">
-        {portfolioData}
+        {projectsData}
       </div>
     </>
   );
 };
 
-export default Portfolio;
+export default Projects;
 
-const PORTFOLIO_DATA = [
+const PROJECTS_DATA = [
   {
     img: blogimg,
     title: "My Blog",

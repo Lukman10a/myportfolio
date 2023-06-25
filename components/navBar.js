@@ -32,10 +32,17 @@ const NavBar = () => {
           </Link>
 
           <Link
-            href="#portfolio-section"
+            href="#tech-section"
             className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
           >
-            Portfolio
+            Technologies
+          </Link>
+
+          <Link
+            href="#projects-section"
+            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+          >
+            Projects
           </Link>
 
           <Link

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import react from "../public/react.png";
-import e_commerce from "../public/e_commerce.png";
-import blog from "../public/blog.png";
-import app from "../public/app.jpg";
-import web from "../public/web.png";
-import frontend from "../public/frontend.png";
+import react from "../public/react.svg";
+import ecommerce from "../public/ecommerce.svg";
+import blog from "../public/blog.svg";
+import mobile from "../public/mobile.svg";
+import web from "../public/web.svg";
+import frontend from "../public/frontend.svg";
 
 const Services = () => {
   const serviceDetails = SERVICE_DETAILLS.map((service) => {
@@ -20,9 +20,9 @@ const Services = () => {
           <Image src={service.img} width={70} />
         </div>
         <p>{service.subtitle}</p>
-        <button className="bg-black hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        {/* <button className="bg-black hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Click Me
-        </button>
+        </button> */}
       </div>
     );
   });
@@ -62,7 +62,7 @@ const SERVICE_DETAILLS = [
     title: "Mobile Development",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet, deserunt magni odio commodi perferendis molestias molestiae,neque vero blanditiis unde iste ut repudiandae corrupti minima ipsumearum excepturi architecto.",
-    img: app,
+    img: mobile,
   },
   {
     title: "Blog Creation",
@@ -74,6 +74,6 @@ const SERVICE_DETAILLS = [
     title: "E-Commerce Web",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet, deserunt magni odio commodi perferendis molestias molestiae,neque vero blanditiis unde iste ut repudiandae corrupti minima ipsumearum excepturi architecto.",
-    img: e_commerce,
+    img: ecommerce,
   },
 ];
