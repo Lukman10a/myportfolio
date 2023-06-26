@@ -23,7 +23,7 @@ const Tech = () => {
       </div>
       {/* <div className="flex flex-wrap items-center justify-center gap-4"> */}
       <div className="grid grid-cols-6 gap-5 p-10">
-        <Image src={tailwind} alt="" width={120} />
+        <Image src={tailwind} alt="" width={120} className=" " />
         <Image src={javascript} alt="" width={120} />
         <Image src={html} alt="" width={120} />
         <Image src={css} alt="" width={120} />

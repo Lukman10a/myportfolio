@@ -19,44 +19,37 @@ const NavBar = () => {
         <div className="md:flex items-center justify-center text-black gap-4 cursor-pointer font-medium ">
           <Link
             href="#home"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+            className="hover:text-blue-300 hover:shadow-[0_0_3px_purple]  transition-all duration-300 hover:p-2 hover:rounded-md"
           >
             Home
           </Link>
 
           <Link
             href="#about-section"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+            className="hover:text-blue-300 hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
           >
             About
           </Link>
 
           <Link
             href="#tech-section"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+            className="hover:text-blue-300 hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
           >
             Technologies
           </Link>
 
           <Link
-            href="#projects-section"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
-          >
-            Projects
-          </Link>
-
-          <Link
             href="#service-section"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+            className="hover:text-blue-300 hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
           >
             Services
           </Link>
 
           <Link
-            href="#contact-section"
-            className="hover:text-blue-300 hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+            href="#projects-section"
+            className="hover:text-blue-300 hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
           >
-            Contact
+            Projects
           </Link>
         </div>
       </div>
@@ -107,35 +100,42 @@ const NavBar = () => {
                 <nav className="grid gap-y-6 py-2">
                   <Link
                     href="#home"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
                     Home
                   </Link>
 
                   <Link
                     href="#about-section"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
                     About
                   </Link>
 
                   <Link
-                    href="#portfolio-section"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                    href="#tech-section"
+                    className="hover:text-blue-300 hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
-                    Portfolio
+                    Technologies
+                  </Link>
+
+                  <Link
+                    href="#portfolio-section"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
+                  >
+                    Projects
                   </Link>
 
                   <Link
                     href="#service-section"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
                     Services
                   </Link>
 
                   <Link
                     href="#contact-section"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-md hover:shadow-black transition-all duration-300 hover:p-2 hover:rounded-md"
+                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
                   >
                     Contact
                   </Link>

@@ -20,9 +20,6 @@ const Services = () => {
           <Image src={service.img} width={70} />
         </div>
         <p>{service.subtitle}</p>
-        {/* <button className="bg-black hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-          Click Me
-        </button> */}
       </div>
     );
   });
