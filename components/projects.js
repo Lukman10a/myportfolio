@@ -1,5 +1,8 @@
 import Image from "next/image";
 import blogimg from "../public/blogimg.jpg";
+import ataasil from "../public/at-taasil.png";
+import muslim_space from "../public/muslim_space.png";
+import mainstack from "../public/mainstack.png";
 import { BsLink45Deg } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
@@ -10,10 +13,14 @@ const Projects = (props) => {
     return (
       <div
         id="projects-section"
-        className="border-none hover:overflow-hidden rounded-2xl space-y-3 shadow-lg hover:shadow-[0_0_20px_gray] transition-all duration-300  hover:rounded-3xl"
+        className="border-none hover:overflow-hidden rounded-2xl space-y-5 shadow-lg hover:shadow-[0_0_20px_gray] transition-all duration-300  hover:rounded-3xl"
       >
         <div className="">
-          <Image src={data.img} alt="" className="rounded-t-2xl" />
+          <Image
+            src={data.img}
+            alt=""
+            className="rounded-t-2xl object-fill hover:scale-110 transition duration-300 ease-in-out hover:transition hover:duration-300 hover:ease-in-out"
+          />
         </div>
         <div className="p-5 space-y-2">
           <h2 className="text-2xl font-bold">{data.title}</h2>
@@ -59,7 +66,7 @@ export default Projects;
 
 const PROJECTS_DATA = [
   {
-    img: blogimg,
+    img: ataasil,
     title: " Info Hive",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -68,7 +75,7 @@ const PROJECTS_DATA = [
     gitlink: "https://github.com/Salafi-blog-project/info-hive",
   },
   {
-    img: blogimg,
+    img: ataasil,
     title: "At-taasil",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -76,7 +83,7 @@ const PROJECTS_DATA = [
     gitlink: "",
   },
   {
-    img: blogimg,
+    img: ataasil,
     title: "Zipo",
     subtitle:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -84,7 +91,7 @@ const PROJECTS_DATA = [
     gitlink: "https://github.com/salafidevelopers/zipo-client",
   },
   {
-    img: blogimg,
+    img: ataasil,
     title: "E-Commerce",
     subtitle:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -93,7 +100,7 @@ const PROJECTS_DATA = [
     gitlink: "https://github.com/Lukman10a/salaficommerce",
   },
   {
-    img: blogimg,
+    img: muslim_space,
     title: "Muslim Space",
     subtitle:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -102,8 +109,8 @@ const PROJECTS_DATA = [
     gitlink: "https://github.com/AOMuiz/muslim-space",
   },
   {
-    img: blogimg,
-    title: "Dasvboard",
+    img: mainstack,
+    title: "Dashboard",
     subtitle:
       " Lorem, ipum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     tech: "Next, Tailwind",
