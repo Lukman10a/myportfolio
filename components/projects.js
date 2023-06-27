@@ -19,7 +19,7 @@ const Projects = (props) => {
           <Image
             src={data.img}
             alt=""
-            className="rounded-t-2xl object-fill hover:scale-110 transition duration-300 ease-in-out hover:transition hover:duration-300 hover:ease-in-out"
+            className=" rounded-t-2xl hover:scale-110 transition duration-300 ease-in-out hover:transition hover:duration-300 hover:ease-in-out"
           />
         </div>
         <div className="p-5 space-y-2">
@@ -28,7 +28,7 @@ const Projects = (props) => {
           <p>
             Techs: <span className="text-sm font-medium">{data.tech}</span>
           </p>
-          <div className="flex justify-between">
+          <div className="flex justify-between border-t-2 border-gray-100 p-2">
             <div className="flex justify-between items-center cursor-pointer">
               <div className="flex items-center gap-2">
                 <p className="text-sm font-medium">View Code</p>
@@ -66,7 +66,7 @@ export default Projects;
 
 const PROJECTS_DATA = [
   {
-    img: ataasil,
+    img: mainstack,
     title: " Info Hive",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt dolore repellendus fugiat et.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.",

@@ -11,6 +11,8 @@ import next from "../public/next.svg";
 import firebase from "../public/firebase.svg";
 import styled from "../public/styled.svg";
 import mui from "../public/mui.svg";
+import typescript from "../public/typescript.svg";
+import expo from "../public/expo.svg";
 
 const Tech = () => {
   return (
@@ -22,19 +24,21 @@ const Tech = () => {
         </h2>
       </div>
       {/* <div className="flex flex-wrap items-center justify-center gap-4"> */}
-      <div className="grid grid-cols-6 gap-5 p-10">
+      <div className="grid grid-cols-5 gap-5 p-10">
+        <Image src={react} alt="" width={120} />
+        <Image src={next} alt="" width={120} />
         <Image src={tailwind} alt="" width={120} className=" " />
         <Image src={javascript} alt="" width={120} />
+        <Image src={typescript} alt="" width={120} />
         <Image src={html} alt="" width={120} />
         <Image src={css} alt="" width={120} />
-        <Image src={github} alt="" width={120} />
-        <Image src={git} alt="" width={120} />
-        <Image src={react} alt="" width={120} />
-        <Image src={vscode} alt="" width={120} />
-        <Image src={next} alt="" width={120} />
         <Image src={firebase} alt="" width={120} />
         <Image src={styled} alt="" width={120} />
         <Image src={mui} alt="" width={120} />
+        <Image src={github} alt="" width={120} />
+        <Image src={git} alt="" width={120} />
+        <Image src={vscode} alt="" width={120} />
+        <Image src={expo} alt="" width={120} />
       </div>
     </div>
   );

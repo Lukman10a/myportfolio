@@ -55,10 +55,16 @@ const NavBar = () => {
       </div>
 
       <div className="flex gap-2 text-2xl">
-        <Link href="https://www.linkedin.com/in/abdulrauf-lukman-761095217/">
+        <Link
+          href="https://www.linkedin.com/in/abdulrauf-lukman-761095217/"
+          className="hover:scale-110 transition ease-in-out duration-300"
+        >
           <AiFillLinkedin />
         </Link>
-        <Link href="https://github.com/Lukman10a">
+        <Link
+          href="https://github.com/Lukman10a"
+          className="hover:scale-110 transition ease-in-out duration-300"
+        >
           <AiFillGithub />
         </Link>
       </div>
@@ -75,7 +81,7 @@ const NavBar = () => {
         enter="duration-200 ease-out"
         enterFrom="opacity-0 scale-95"
         enterTo="opacity-100 scale-100"
-        leave="duration-100 ease-in"
+        leave="transition duration-100 ease-in"
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
@@ -132,14 +138,21 @@ const NavBar = () => {
                   >
                     Services
                   </Link>
-
-                  <Link
-                    href="#contact-section"
-                    className="hover:text-blue-500 hover:text-center hover:shadow-[0_0_3px_purple] transition-all duration-300 hover:p-2 hover:rounded-md"
-                  >
-                    Contact
-                  </Link>
                 </nav>
+                <div className="flex justify-center gap-4  text-2xl">
+                  <Link
+                    href="https://www.linkedin.com/in/abdulrauf-lukman-761095217/"
+                    className="hover:scale-110 transition ease-in-out duration-300"
+                  >
+                    <AiFillLinkedin />
+                  </Link>
+                  <Link
+                    href="https://github.com/Lukman10a"
+                    className="hover:scale-110 transition ease-in-out duration-300"
+                  >
+                    <AiFillGithub />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
